@@ -23,7 +23,7 @@ const Blogs = () => {
   return (
     <div>
       <Title
-        title={"Recent Blogs"}
+        title={"Blogs"}
         des={
           "Dive into my latest blog posts where I share insights, tutorials, and experiences on web development, problem-solving, and modern technologies."
         }

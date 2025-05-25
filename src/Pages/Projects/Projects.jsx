@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <div>
       <Title
-        title={"My Recent Projects"}
+        title={"Projects"}
         des={
           "Explore some of the real-world projects I’ve built using modern technologies, showcasing my problem-solving and development skills."
         }

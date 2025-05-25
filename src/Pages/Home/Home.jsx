@@ -5,6 +5,7 @@ import Projects from "../Projects/Projects";
 import Skill from "../Skills/Skill";
 import Banner from "./Banner/Banner";
 import Blogs from "../Blogs/Blogs";
+import EducationSection from "../Education/EducationSection";
 
 const Home = () => {
   return (
@@ -23,6 +24,9 @@ const Home = () => {
       </section>
       <section data-section="projects">
         <Blogs />
+      </section>
+      <section data-section="education">
+        <EducationSection />
       </section>
       <section data-section="contact">
         <Contact />

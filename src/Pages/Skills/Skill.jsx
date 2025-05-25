@@ -30,7 +30,7 @@ export default function Skill() {
   return (
     <div>
       <Title
-        title={"My Technical Skills"}
+        title={"Technical Skills"}
         des={
           "Highlighting my proficiency in frontend technologies, backend frameworks, databases, and development tools."
         }
