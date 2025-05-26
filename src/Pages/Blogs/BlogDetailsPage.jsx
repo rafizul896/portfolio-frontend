@@ -13,6 +13,7 @@ import {
   WhatsappIcon,
   EmailIcon,
 } from "react-share";
+import DOMPurify from "dompurify";
 
 const BlogDetailsPage = () => {
   const { id } = useParams();
@@ -86,10 +87,12 @@ const BlogDetailsPage = () => {
         <span>Published on {formatDate(blog.createdAt)}</span>
       </div>
 
-      {/* Content */}
-      <div className="text-lg text-gray-300 leading-relaxed mb-6">
-        {blog.content}
-      </div>
+      <div
+        className="text-lg text-gray-300 leading-relaxed mb-6"
+        dangerouslySetInnerHTML={{
+          __html: DOMPurify.sanitize(blog.content),
+        }}
+      ></div>
 
       {/* Share Section */}
       <div className="mt-10">

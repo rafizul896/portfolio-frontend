@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
 
 const BlogCard = ({ blog, i }) => {
+  const extractText = (htmlString) => {
+    if (typeof window !== "undefined") {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(htmlString, "text/html");
+      return doc.body.textContent || "";
+    }
+    return "";
+  };
+
   return (
     <div
       data-aos="fade-up"
@@ -50,10 +59,11 @@ const BlogCard = ({ blog, i }) => {
         </div>
 
         {/* Description Preview */}
+
         <p className="text-gray-200 text-sm">
-          {blog?.content.length > 100
-            ? blog?.content.slice(0, 100) + "..."
-            : blog?.content}
+          {extractText(blog?.content).length > 100
+            ? extractText(blog?.content).slice(0, 100) + "..."
+            : extractText(blog?.content)}
         </p>
 
         {/* Read More Button */}
