@@ -1,5 +1,4 @@
 import { Link2 } from "lucide-react";
-import React from "react";
 
 const ProjectCard = ({ project, i }) => {
   return (

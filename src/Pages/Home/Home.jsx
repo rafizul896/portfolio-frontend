@@ -28,7 +28,7 @@ const Home = () => {
       <section data-section="education">
         <EducationSection />
       </section>
-      <section data-section="contact">
+      <section name="contact">
         <Contact />
       </section>
       <ToastContainer autoClose={2000} position="bottom-center" />

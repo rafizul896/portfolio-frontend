@@ -42,7 +42,7 @@ const ProjectDetailsPage = () => {
   }
 
   return (
-    <div className="my-6">
+    <div name="home" className="my-6">
       <div>
         <button
           onClick={() => navigate(-1)}
@@ -55,7 +55,7 @@ const ProjectDetailsPage = () => {
 
       <div
         key={id}
-        className="p-6 mt-6 rounded-lg shadow-2xl bg-purple-800/5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-12"
+        className="mt-6 rounded-lg shadow-2xl bg-purple-800/5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-12"
       >
         {/* Left section: Title and Image */}
         <div className="space-y-4 md:col-span-2 lg:col-span-3">

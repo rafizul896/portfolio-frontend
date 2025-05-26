@@ -1,5 +1,3 @@
-import { IoLogoFirebase } from "react-icons/io5";
-import { FaNodeJs, FaReact } from "react-icons/fa";
 import Title from "../../Components/Shared/Title";
 import Lottie from "react-lottie";
 import { RiTailwindCssFill } from "react-icons/ri";

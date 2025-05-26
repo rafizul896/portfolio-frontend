@@ -48,7 +48,7 @@ const BlogDetailsPage = () => {
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-4 my-6">
+    <div name="home" className="my-6">
       <button
         onClick={() => navigate(-1)}
         className="buttonClass cursor-pointer group"

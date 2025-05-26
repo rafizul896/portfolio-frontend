@@ -33,16 +33,16 @@ const Contact = () => {
             {/* Phone */}
             <div className="flex items-center gap-3 p-3 rounded-lg shadow-sm">
               <FaPhone className="text-fuchsia-400 text-xl" />
-              <a href="tel:+123456789" className="text-xs lg:text-sm">
+              <p className="text-xs lg:text-sm">
                 +880 18922 14506
-              </a>
+              </p>
             </div>
 
             {/* WhatsApp (Optional) */}
             <div className="flex items-center gap-3 p-3 rounded-lg shadow-sm">
               <FaWhatsapp className="text-fuchsia-400 text-xl" />
               <a
-                href="https://wa.me/01892214506"
+                href="https://wa.me/+8801892214506"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs lg:text-sm"
