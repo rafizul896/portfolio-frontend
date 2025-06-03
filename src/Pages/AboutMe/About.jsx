@@ -1,7 +1,4 @@
 import Title from "../../Components/Shared/Title";
-import Lottie from "react-lottie";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { DiMongodb } from "react-icons/di";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 import { Link } from "react-scroll";

@@ -38,7 +38,6 @@ const Contact = () => {
               </p>
             </div>
 
-            {/* WhatsApp (Optional) */}
             <div className="flex items-center gap-3 p-3 rounded-lg shadow-sm">
               <FaWhatsapp className="text-fuchsia-400 text-xl" />
               <a
