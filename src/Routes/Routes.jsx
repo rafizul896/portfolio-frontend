@@ -6,10 +6,12 @@ import ProjectDetailsPage from "../Pages/Projects/ProjectDetailsPage";
 import BlogsPage from "../Pages/Blogs/BlogsPage";
 import BlogDetailsPage from "../Pages/Blogs/BlogDetailsPage";
 import SkillPage from "../Pages/Skills/SkillPage";
+import NotFoundPage from "../Pages/NotFound/NotFoundPage";
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />,
+    errorElement: <NotFoundPage />,
     children: [
       {
         path: "/",
