@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const BlogCard = ({ blog, i }) => {
+  
   const extractText = (htmlString) => {
     if (typeof window !== "undefined") {
       const parser = new DOMParser();

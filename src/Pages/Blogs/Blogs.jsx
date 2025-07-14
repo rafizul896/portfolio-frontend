@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Title from "../../Components/Shared/Title";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { Link2 } from "lucide-react";
 import BlogCard from "../../Components/Card/BlogCard";
 
 const Blogs = () => {
