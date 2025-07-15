@@ -1,4 +1,4 @@
-import { Link2 } from "lucide-react";
+import { Radio } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project, i }) => {
@@ -36,7 +36,8 @@ const ProjectCard = ({ project, i }) => {
               rel="noopener noreferrer"
               className="text-purple-400 hover:text-purple-300"
             >
-              <Link2 className="h-5 w-5" />
+              
+              <Radio className="h-5 w-5" />
             </a>
           </div>
 
