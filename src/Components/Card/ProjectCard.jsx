@@ -7,7 +7,7 @@ const ProjectCard = ({ project, i }) => {
       data-aos="fade-up"
       data-aos-delay={i * 100}
       data-aos-anchor-placement="top-bottom"
-      className="max-h-[550px]" // Ensures card stays under 500px
+      className="max-h-[550px]"
     >
       <div className="relative rounded-2xl h-full bg-gradient-to-br shadow-lg shadow-purple-600/10 flex flex-col hover:shadow-purple-500/20 overflow-hidden border border-purple-500/20 backdrop-blur-sm transition-all duration-300 hover:border-purple-400/40 group">
         {/* Image Section with Auto-Scroll Effect */}
@@ -24,7 +24,6 @@ const ProjectCard = ({ project, i }) => {
               }}
             />
 
-            {/* Gradient overlay for better text visibility */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
         </div>
@@ -36,16 +35,13 @@ const ProjectCard = ({ project, i }) => {
             </h2>
             <div className="absolute -left-2 top-0 w-1 h-full bg-gradient-to-b from-purple-400 to-purple-600 rounded-full opacity-60" />
           </div>
-          {/* Compact Technologies Section */}
+
           <div className="space-y-2">
             <h3 className="text-gray-300 font-medium flex items-center gap-2">
-              {" "}
-              {/* Reduced font size */}
               <span className="w-1.5 h-1.5 bg-purple-400 rounded-full" />
               Technologies Used
             </h3>
 
-            {/* Compact Technologies Grid */}
             <div className="grid grid-cols-3 gap-1.5">
               {project?.technologies?.slice(0, 5)?.map(
                 (
@@ -68,7 +64,6 @@ const ProjectCard = ({ project, i }) => {
             </div>
           </div>
 
-          {/* Compact Action Section */}
           <div className="flex items-center justify-between pt-2">
             <div className="pt-2">
               <Link

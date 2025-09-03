@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const BlogCard = ({ blog, i }) => {
-  
   const extractText = (htmlString) => {
     if (typeof window !== "undefined") {
       const parser = new DOMParser();
@@ -27,9 +26,7 @@ const BlogCard = ({ blog, i }) => {
         />
       </div>
 
-      {/* Content */}
       <div className="p-5 space-y-3">
-        {/* Tags */}
         <div className="flex flex-wrap gap-2">
           {blog?.tags?.map((tag, index) => (
             <span
@@ -41,12 +38,10 @@ const BlogCard = ({ blog, i }) => {
           ))}
         </div>
 
-        {/* Title */}
         <h2 className="text-xl font-semibold text-white leading-snug">
           {blog?.title}
         </h2>
 
-        {/* Author and Date */}
         <div className="text-sm text-gray-200 flex gap-2">
           <span>{blog?.author}</span>
           <span>·</span>
@@ -59,15 +54,12 @@ const BlogCard = ({ blog, i }) => {
           </span>
         </div>
 
-        {/* Description Preview */}
-
         <p className="text-gray-200 text-sm">
           {extractText(blog?.content).length > 100
             ? extractText(blog?.content).slice(0, 100) + "..."
             : extractText(blog?.content)}
         </p>
 
-        {/* Read More Button */}
         <div className="pt-3">
           <Link
             to={`/blogs/${blog?._id}`}
